@@ -14,5 +14,3 @@ FOUNDATION_EXPORT double NetworkMonitorVersionNumber;
 FOUNDATION_EXPORT const unsigned char NetworkMonitorVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <NetworkMonitor/PublicHeader.h>
-
-
