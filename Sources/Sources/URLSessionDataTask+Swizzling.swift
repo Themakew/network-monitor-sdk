@@ -8,7 +8,12 @@
 import Foundation
 
 extension URLSession {
-    func monitorDataTask(withRequest request: URLRequest, data: Data?, response: URLResponse?, error: Error?) {
+    func monitorDataTask(
+        withRequest request: URLRequest,
+        data: Data?,
+        response: URLResponse?,
+        error: Error?
+    ) {
         let startDate = Date()
         let startURL = request.url
         var finalURL: URL? = startURL

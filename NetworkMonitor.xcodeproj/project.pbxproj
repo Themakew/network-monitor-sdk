@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		560D74FB2C265B25003D9AE9 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D74FA2C265B25003D9AE9 /* NetworkMonitor.swift */; };
-		560D74FE2C265BEA003D9AE9 /* URLSession+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D74FD2C265BEA003D9AE9 /* URLSession+Swizzling.swift */; };
-		560D75002C265C03003D9AE9 /* URLSessionDataTask+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D74FF2C265C03003D9AE9 /* URLSessionDataTask+Swizzling.swift */; };
-		5681D8D02C23C8BC0035B742 /* NetworkMonitor.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5681D8CF2C23C8BC0035B742 /* NetworkMonitor.docc */; };
+		560D75032C28D063003D9AE9 /* NetworkMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D75012C28D063003D9AE9 /* NetworkMonitorTests.swift */; };
+		5621DD5F2C2A478B00E8649F /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5621DD582C2A478B00E8649F /* NetworkMonitor.swift */; };
+		5621DD602C2A478B00E8649F /* URLSession+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5621DD592C2A478B00E8649F /* URLSession+Swizzling.swift */; };
+		5621DD612C2A478B00E8649F /* URLSessionDataTask+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5621DD5A2C2A478B00E8649F /* URLSessionDataTask+Swizzling.swift */; };
+		5621DD622C2A478B00E8649F /* NetworkMonitor.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5621DD5C2C2A478B00E8649F /* NetworkMonitor.docc */; };
+		5621DD632C2A478B00E8649F /* NetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5621DD5D2C2A478B00E8649F /* NetworkMonitor.h */; };
 		5681D8D62C23C8BD0035B742 /* NetworkMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5681D8CB2C23C8BC0035B742 /* NetworkMonitor.framework */; };
-		5681D8DB2C23C8BD0035B742 /* NetworkMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681D8DA2C23C8BD0035B742 /* NetworkMonitorTests.swift */; };
-		5681D8DC2C23C8BD0035B742 /* NetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5681D8CE2C23C8BC0035B742 /* NetworkMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,14 +27,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		560D74FA2C265B25003D9AE9 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
-		560D74FD2C265BEA003D9AE9 /* URLSession+Swizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Swizzling.swift"; sourceTree = "<group>"; };
-		560D74FF2C265C03003D9AE9 /* URLSessionDataTask+Swizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask+Swizzling.swift"; sourceTree = "<group>"; };
+		560D75012C28D063003D9AE9 /* NetworkMonitorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitorTests.swift; sourceTree = "<group>"; };
+		5621DD582C2A478B00E8649F /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		5621DD592C2A478B00E8649F /* URLSession+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Swizzling.swift"; sourceTree = "<group>"; };
+		5621DD5A2C2A478B00E8649F /* URLSessionDataTask+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask+Swizzling.swift"; sourceTree = "<group>"; };
+		5621DD5C2C2A478B00E8649F /* NetworkMonitor.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkMonitor.docc; sourceTree = "<group>"; };
+		5621DD5D2C2A478B00E8649F /* NetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMonitor.h; sourceTree = "<group>"; };
 		5681D8CB2C23C8BC0035B742 /* NetworkMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5681D8CE2C23C8BC0035B742 /* NetworkMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkMonitor.h; sourceTree = "<group>"; };
-		5681D8CF2C23C8BC0035B742 /* NetworkMonitor.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkMonitor.docc; sourceTree = "<group>"; };
 		5681D8D52C23C8BD0035B742 /* NetworkMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5681D8DA2C23C8BD0035B742 /* NetworkMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		560D74FC2C265BA8003D9AE9 /* Sources */ = {
+		560D75022C28D063003D9AE9 /* NetworkMonitorTests */ = {
 			isa = PBXGroup;
 			children = (
-				560D74FA2C265B25003D9AE9 /* NetworkMonitor.swift */,
-				560D74FD2C265BEA003D9AE9 /* URLSession+Swizzling.swift */,
-				560D74FF2C265C03003D9AE9 /* URLSessionDataTask+Swizzling.swift */,
+				560D75012C28D063003D9AE9 /* NetworkMonitorTests.swift */,
+			);
+			name = NetworkMonitorTests;
+			path = Tests/NetworkMonitorTests;
+			sourceTree = "<group>";
+		};
+		5621DD5B2C2A478B00E8649F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5621DD582C2A478B00E8649F /* NetworkMonitor.swift */,
+				5621DD592C2A478B00E8649F /* URLSession+Swizzling.swift */,
+				5621DD5A2C2A478B00E8649F /* URLSessionDataTask+Swizzling.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5621DD5E2C2A478B00E8649F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5621DD5B2C2A478B00E8649F /* Sources */,
+				5621DD5C2C2A478B00E8649F /* NetworkMonitor.docc */,
+				5621DD5D2C2A478B00E8649F /* NetworkMonitor.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -69,8 +88,8 @@
 		5681D8C12C23C8BC0035B742 = {
 			isa = PBXGroup;
 			children = (
-				5681D8CD2C23C8BC0035B742 /* NetworkMonitor */,
-				5681D8D92C23C8BD0035B742 /* NetworkMonitorTests */,
+				5621DD5E2C2A478B00E8649F /* Sources */,
+				560D75022C28D063003D9AE9 /* NetworkMonitorTests */,
 				5681D8CC2C23C8BC0035B742 /* Products */,
 				5681D9FE2C23D1660035B742 /* Frameworks */,
 			);
@@ -83,24 +102,6 @@
 				5681D8D52C23C8BD0035B742 /* NetworkMonitorTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5681D8CD2C23C8BC0035B742 /* NetworkMonitor */ = {
-			isa = PBXGroup;
-			children = (
-				560D74FC2C265BA8003D9AE9 /* Sources */,
-				5681D8CE2C23C8BC0035B742 /* NetworkMonitor.h */,
-				5681D8CF2C23C8BC0035B742 /* NetworkMonitor.docc */,
-			);
-			path = NetworkMonitor;
-			sourceTree = "<group>";
-		};
-		5681D8D92C23C8BD0035B742 /* NetworkMonitorTests */ = {
-			isa = PBXGroup;
-			children = (
-				5681D8DA2C23C8BD0035B742 /* NetworkMonitorTests.swift */,
-			);
-			path = NetworkMonitorTests;
 			sourceTree = "<group>";
 		};
 		5681D9FE2C23D1660035B742 /* Frameworks */ = {
@@ -117,7 +118,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5681D8DC2C23C8BD0035B742 /* NetworkMonitor.h in Headers */,
+				5621DD632C2A478B00E8649F /* NetworkMonitor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,10 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5681D8D02C23C8BC0035B742 /* NetworkMonitor.docc in Sources */,
-				560D75002C265C03003D9AE9 /* URLSessionDataTask+Swizzling.swift in Sources */,
-				560D74FB2C265B25003D9AE9 /* NetworkMonitor.swift in Sources */,
-				560D74FE2C265BEA003D9AE9 /* URLSession+Swizzling.swift in Sources */,
+				5621DD622C2A478B00E8649F /* NetworkMonitor.docc in Sources */,
+				5621DD612C2A478B00E8649F /* URLSessionDataTask+Swizzling.swift in Sources */,
+				5621DD602C2A478B00E8649F /* URLSession+Swizzling.swift in Sources */,
+				5621DD5F2C2A478B00E8649F /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5681D8DB2C23C8BD0035B742 /* NetworkMonitorTests.swift in Sources */,
+				560D75032C28D063003D9AE9 /* NetworkMonitorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

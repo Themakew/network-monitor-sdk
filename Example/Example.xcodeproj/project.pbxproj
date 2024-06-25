@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5621DD852C2A49F500E8649F /* NetworkMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5681DA002C23D1750035B742 /* NetworkMonitor.framework */; };
+		5621DD862C2A49F500E8649F /* NetworkMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5681DA002C23D1750035B742 /* NetworkMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5681D9D52C23D0F10035B742 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681D9D42C23D0F10035B742 /* ExampleApp.swift */; };
 		5681D9D72C23D0F10035B742 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681D9D62C23D0F10035B742 /* ContentView.swift */; };
 		5681D9D92C23D0F20035B742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5681D9D82C23D0F20035B742 /* Assets.xcassets */; };
@@ -14,11 +16,23 @@
 		5681D9E62C23D0F20035B742 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681D9E52C23D0F20035B742 /* ExampleTests.swift */; };
 		5681D9F02C23D0F20035B742 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681D9EF2C23D0F20035B742 /* ExampleUITests.swift */; };
 		5681D9F22C23D0F20035B742 /* ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681D9F12C23D0F20035B742 /* ExampleUITestsLaunchTests.swift */; };
-		5681DA012C23D1750035B742 /* NetworkMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5681DA002C23D1750035B742 /* NetworkMonitor.framework */; };
-		5681DA022C23D1750035B742 /* NetworkMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5681DA002C23D1750035B742 /* NetworkMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5621DD422C2A467A00E8649F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5621DD3D2C2A467A00E8649F /* NetworkMonitor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5681D8CB2C23C8BC0035B742;
+			remoteInfo = NetworkMonitor;
+		};
+		5621DD442C2A467A00E8649F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5621DD3D2C2A467A00E8649F /* NetworkMonitor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5681D8D52C23C8BD0035B742;
+			remoteInfo = NetworkMonitorTests;
+		};
 		5681D9E22C23D0F20035B742 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5681D9C92C23D0F10035B742 /* Project object */;
@@ -36,13 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5681DA032C23D1750035B742 /* Embed Frameworks */ = {
+		5621DD872C2A49F500E8649F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5681DA022C23D1750035B742 /* NetworkMonitor.framework in Embed Frameworks */,
+				5621DD862C2A49F500E8649F /* NetworkMonitor.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5621DD3D2C2A467A00E8649F /* NetworkMonitor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkMonitor.xcodeproj; path = ../NetworkMonitor/NetworkMonitor.xcodeproj; sourceTree = "<group>"; };
 		5681D9D12C23D0F10035B742 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5681D9D42C23D0F10035B742 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		5681D9D62C23D0F10035B742 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5681DA012C23D1750035B742 /* NetworkMonitor.framework in Frameworks */,
+				5621DD852C2A49F500E8649F /* NetworkMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5621DD3E2C2A467A00E8649F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5621DD432C2A467A00E8649F /* NetworkMonitor.framework */,
+				5621DD452C2A467A00E8649F /* NetworkMonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5681D9C82C23D0F10035B742 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +173,7 @@
 		5681D9FF2C23D1750035B742 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5621DD3D2C2A467A00E8649F /* NetworkMonitor.xcodeproj */,
 				5681DA002C23D1750035B742 /* NetworkMonitor.framework */,
 			);
 			name = Frameworks;
@@ -164,13 +189,15 @@
 				5681D9CD2C23D0F10035B742 /* Sources */,
 				5681D9CE2C23D0F10035B742 /* Frameworks */,
 				5681D9CF2C23D0F10035B742 /* Resources */,
-				5681DA032C23D1750035B742 /* Embed Frameworks */,
+				5621DD872C2A49F500E8649F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+			);
 			productName = Example;
 			productReference = 5681D9D12C23D0F10035B742 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -243,8 +270,16 @@
 				Base,
 			);
 			mainGroup = 5681D9C82C23D0F10035B742;
+			packageReferences = (
+			);
 			productRefGroup = 5681D9D22C23D0F10035B742 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5621DD3E2C2A467A00E8649F /* Products */;
+					ProjectRef = 5621DD3D2C2A467A00E8649F /* NetworkMonitor.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5681D9D02C23D0F10035B742 /* Example */,
@@ -253,6 +288,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5621DD432C2A467A00E8649F /* NetworkMonitor.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NetworkMonitor.framework;
+			remoteRef = 5621DD422C2A467A00E8649F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5621DD452C2A467A00E8649F /* NetworkMonitorTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetworkMonitorTests.xctest;
+			remoteRef = 5621DD442C2A467A00E8649F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5681D9CF2C23D0F10035B742 /* Resources */ = {
@@ -449,7 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = CSD6NA874L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -478,7 +530,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = CSD6NA874L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
