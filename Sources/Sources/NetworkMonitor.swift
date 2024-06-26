@@ -14,7 +14,11 @@ import Foundation
 @objc public class NetworkMonitorSDK: NSObject {
     public static var logger: LoggerProtocol = MonitorLogger()
 
-    @objc public static func startMonitoring(with logger: LoggerProtocol = NetworkMonitorSDK.logger) {
+    @objc public static func startMonitoring() {
+        startMonitoring(with: logger)
+    }
+
+    @objc public static func startMonitoring(with logger: LoggerProtocol) {
         self.logger = logger
         URLSession.swizzleDataTaskMethods()
         debugPrint("Network monitoring started.")
