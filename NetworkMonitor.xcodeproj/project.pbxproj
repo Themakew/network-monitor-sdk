@@ -14,6 +14,8 @@
 		5621DD622C2A478B00E8649F /* NetworkMonitor.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5621DD5C2C2A478B00E8649F /* NetworkMonitor.docc */; };
 		5621DD632C2A478B00E8649F /* NetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5621DD5D2C2A478B00E8649F /* NetworkMonitor.h */; };
 		5681D8D62C23C8BD0035B742 /* NetworkMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5681D8CB2C23C8BC0035B742 /* NetworkMonitor.framework */; };
+		569543722C2B81F7005B5D6D /* MonitorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569543712C2B81F7005B5D6D /* MonitorLogger.swift */; };
+		569543752C2B902D005B5D6D /* LoggerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569543742C2B902D005B5D6D /* LoggerSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		5621DD5D2C2A478B00E8649F /* NetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMonitor.h; sourceTree = "<group>"; };
 		5681D8CB2C23C8BC0035B742 /* NetworkMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5681D8D52C23C8BD0035B742 /* NetworkMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		569543712C2B81F7005B5D6D /* MonitorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorLogger.swift; sourceTree = "<group>"; };
+		569543742C2B902D005B5D6D /* LoggerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,8 @@
 		560D75022C28D063003D9AE9 /* NetworkMonitorTests */ = {
 			isa = PBXGroup;
 			children = (
-				560D75012C28D063003D9AE9 /* NetworkMonitorTests.swift */,
+				569543762C2B9045005B5D6D /* Tests */,
+				569543732C2B9011005B5D6D /* Spy */,
 			);
 			name = NetworkMonitorTests;
 			path = Tests/NetworkMonitorTests;
@@ -71,6 +76,7 @@
 				5621DD582C2A478B00E8649F /* NetworkMonitor.swift */,
 				5621DD592C2A478B00E8649F /* URLSession+Swizzling.swift */,
 				5621DD5A2C2A478B00E8649F /* URLSessionDataTask+Swizzling.swift */,
+				569543712C2B81F7005B5D6D /* MonitorLogger.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -109,6 +115,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		569543732C2B9011005B5D6D /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				569543742C2B902D005B5D6D /* LoggerSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		569543762C2B9045005B5D6D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				560D75012C28D063003D9AE9 /* NetworkMonitorTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569543722C2B81F7005B5D6D /* MonitorLogger.swift in Sources */,
 				5621DD622C2A478B00E8649F /* NetworkMonitor.docc in Sources */,
+				569543752C2B902D005B5D6D /* LoggerSpy.swift in Sources */,
 				5621DD612C2A478B00E8649F /* URLSessionDataTask+Swizzling.swift in Sources */,
 				5621DD602C2A478B00E8649F /* URLSession+Swizzling.swift in Sources */,
 				5621DD5F2C2A478B00E8649F /* NetworkMonitor.swift in Sources */,

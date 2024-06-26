@@ -30,7 +30,7 @@ struct ContentView: View {
     func makeNetworkCalls() {
         // Using dataTask(with: URL)
         let firstURL = URL(string: "https://jsonplaceholder.typicode.com/todos/1")!
-        let task1 = URLSession.shared.dataTaskPublisher(for: <#T##URL#>) dataTask(with: firstURL)
+        let task1 = URLSession.shared.dataTask(with: firstURL)
         task1.resume()
 
         // Using dataTask(with: URLRequest)

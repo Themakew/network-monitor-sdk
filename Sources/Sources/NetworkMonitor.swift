@@ -7,8 +7,15 @@
 
 import Foundation
 
+@objc public protocol LoggerProtocol {
+    func logRequest(startURL: URL?, duration: TimeInterval, finalURL: URL?, redirected: Bool, status: String)
+}
+
 @objc public class NetworkMonitorSDK: NSObject {
-    @objc public static func startMonitoring() {
+    public static var logger: LoggerProtocol = MonitorLogger()
+
+    @objc public static func startMonitoring(with logger: LoggerProtocol = NetworkMonitorSDK.logger) {
+        self.logger = logger
         URLSession.swizzleDataTaskMethods()
         debugPrint("Network monitoring started.")
     }
