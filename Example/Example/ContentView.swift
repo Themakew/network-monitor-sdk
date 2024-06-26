@@ -49,7 +49,7 @@ struct ContentView: View {
         // Using dataTask(with: URLRequest, completionHandler)
         let forthURL = URL(string: "https://jsonplaceholder.typicode.com/albums")!
         let request2 = URLRequest(url: forthURL)
-        let task4 = URLSession.shared.dataTask(with: request2) { data, response, error in
+        let task4 = URLSession.shared.uploadTask(with: request2, from: Data()) { data, response, error in
             print("Task4 done")
         }
         task4.resume()
